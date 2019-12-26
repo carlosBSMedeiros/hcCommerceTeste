@@ -1,0 +1,121 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<web-app xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+	xmlns="http://java.sun.com/xml/ns/javaee"
+	xmlns:web="http://java.sun.com/xml/ns/javaee/web-app_2_5.xsd"
+	xsi:schemaLocation="http://java.sun.com/xml/ns/javaee http://java.sun.com/xml/ns/javaee/web-app_2_5.xsd"
+	id="WebApp_ID" version="2.5">
+
+
+	<!-- essas tags são essenciais para a conexão funcionar. Em qualquer caso 
+		de mudança do nome dos pacotes os classes é preciso alterar o conteudo das 
+		tags -->
+
+	<!-- servlet do cliente, foi usado no começo para testes -->
+	<!-- <servlet> -->
+	<!-- <servlet-name>ClienteServlet</servlet-name> -->
+	<!-- <servlet-class>controllers.ClienteServlet</servlet-class> -->
+	<!-- </servlet> -->
+	<!-- <servlet-mapping> -->
+	<!-- <servlet-name>ClienteServlet</servlet-name> -->
+	<!-- <url-pattern>/clienteweb/clienteservlet</url-pattern> -->
+	<!-- </servlet-mapping> -->
+
+
+	<servlet>
+		<servlet-name>CadastroPessoa</servlet-name>
+		<servlet-class>controllers.CadastroPessoa</servlet-class>
+	</servlet>
+	<servlet-mapping>
+		<servlet-name>CadastroPessoa</servlet-name>
+		<url-pattern>/clienteweb/cadastropessoa</url-pattern>
+	</servlet-mapping>
+	
+	<servlet>
+		<servlet-name>AlterarPessoa</servlet-name>
+		<servlet-class>controllers.AlterarPessoa</servlet-class>
+	</servlet>
+	<servlet-mapping>
+		<servlet-name>AlterarPessoa</servlet-name>
+		<url-pattern>/clienteweb/alterarPessoa</url-pattern>
+	</servlet-mapping>
+
+	<servlet>
+		<servlet-name>CadastroProduto</servlet-name>
+		<servlet-class>controllers.CadastroProduto</servlet-class>
+	</servlet>
+	<servlet-mapping>
+		<servlet-name>CadastroProduto</servlet-name>
+		<url-pattern>/clienteweb/cadastroproduto</url-pattern>
+	</servlet-mapping>
+	
+	<servlet>
+		<servlet-name>AlterarProduto</servlet-name>
+		<servlet-class>controllers.AlterarProduto</servlet-class>
+	</servlet>
+	<servlet-mapping>
+		<servlet-name>AlterarProduto</servlet-name>
+		<url-pattern>/clienteweb/alterarProduto</url-pattern>
+	</servlet-mapping>
+
+	<servlet>
+		<servlet-name>Index</servlet-name>
+		<servlet-class>controllers.Index</servlet-class>
+	</servlet>
+	<servlet-mapping>
+		<servlet-name>Index</servlet-name>
+		<url-pattern>/clienteweb/index</url-pattern>
+	</servlet-mapping>
+
+	<servlet>
+		<servlet-name>Estoque</servlet-name>
+		<servlet-class>controllers.Estoque</servlet-class>
+	</servlet>
+	<servlet-mapping>
+		<servlet-name>Estoque</servlet-name>
+		<url-pattern>/clienteweb/estoque</url-pattern>
+	</servlet-mapping>
+
+	<servlet>
+		<servlet-name>HistoricoVendas</servlet-name>
+		<servlet-class>controllers.HistoricoVendas</servlet-class>
+	</servlet>
+	<servlet-mapping>
+		<servlet-name>HistoricoVendas</servlet-name>
+		<url-pattern>/clienteweb/historicoVendas</url-pattern>
+	</servlet-mapping>
+
+	<servlet>
+		<servlet-name>NotaVenda</servlet-name>
+		<servlet-class>controllers.NotaVenda</servlet-class>
+	</servlet>
+	<servlet-mapping>
+		<servlet-name>NotaVenda</servlet-name>
+		<url-pattern>/clienteweb/notaVenda</url-pattern>
+	</servlet-mapping>
+
+	<servlet>
+		<servlet-name>PessoasCadastradas</servlet-name>
+		<servlet-class>controllers.PessoasCadastradas</servlet-class>
+	</servlet>
+	<servlet-mapping>
+		<servlet-name>PessoasCadastradas</servlet-name>
+		<url-pattern>/clienteweb/pessoasCadastradas</url-pattern>
+	</servlet-mapping>
+	
+	<servlet-mapping>
+    <servlet-name>default</servlet-name>
+    <url-pattern>*.png</url-pattern>
+    <url-pattern>*.jpg</url-pattern>
+	</servlet-mapping>
+
+
+	<display-name>clienteweb</display-name>
+	<welcome-file-list>
+		<welcome-file>index.html</welcome-file>
+		<welcome-file>index.htm</welcome-file>
+		<welcome-file>index.jsp</welcome-file>
+		<welcome-file>default.html</welcome-file>
+		<welcome-file>default.htm</welcome-file>
+		<welcome-file>default.jsp</welcome-file>
+	</welcome-file-list>
+</web-app>

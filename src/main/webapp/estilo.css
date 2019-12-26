@@ -1,0 +1,17 @@
+/*.form-control{
+    min-width: 280px
+}
+*/
+.scrollspySite{
+    position: relative;
+    overflow: auto;
+    height: 400px;
+}
+
+.container{
+    min-height: 700px;
+}
+
+.alerta-erro{
+	text-color: red;
+}
